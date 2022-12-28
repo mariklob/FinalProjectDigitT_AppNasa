@@ -1,0 +1,18 @@
+# FinalProjectDigitT_AppNasa
+#Application on Python with API of Nasa for final project 
+#templates.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>A photos makes {{photos[0]['earth_date']}}</h1>
+{% for i in photos %}
+<img src="{{ i['img_src'] }}">
+{% endfor %}
+</body>
+</html>
